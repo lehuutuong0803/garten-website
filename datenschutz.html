@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Datenschutzerklärung | Garten & Hausmeisterservice</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+ 
+    <!-- Local Fonts - DSGVO Compliant -->
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <!-- Icon Fonts - Self-hosted (after downloading) -->
+    <link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #348E38;
+            --secondary: #525368;
+            --light: #E8F5E9;
+            --dark: #0F4229;
+            --border: #d1e7d2;
+            --bg-section: #f7fbf7;
+            --text: #2d2d2d;
+            --text-muted: #6b7280;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text);
+            background: #fff;
+        }
+
+        /* ── Two-column layout ── */
+        .dsgvo-layout {
+            display: grid;
+            grid-template-columns: 255px 1fr;
+            gap: 3rem;
+            align-items: start;
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+
+        @media (max-width: 991px) {
+            .dsgvo-layout { grid-template-columns: 1fr; }
+            .dsgvo-toc { display: none; }
+        }
+
+        /* ── Sticky TOC ── */
+        .dsgvo-toc {
+            position: sticky;
+            top: 100px;
+            background: var(--bg-section);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.2rem;
+        }
+
+        .toc-title {
+            font-family: 'Jost', sans-serif;
+            font-weight: 700;
+            font-size: 0.72rem;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .dsgvo-toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dsgvo-toc li {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .dsgvo-toc li:last-child { border-bottom: none; }
+
+        .dsgvo-toc li a {
+            display: flex;
+            align-items: baseline;
+            gap: 0.4rem;
+            padding: 0.5rem 0.2rem;
+            font-size: 0.81rem;
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.2s, padding-left 0.2s;
+            line-height: 1.4;
+        }
+
+        .dsgvo-toc li a:hover { color: var(--primary); padding-left: 0.4rem; }
+
+        .toc-num {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.73rem;
+            flex-shrink: 0;
+        }
+
+        /* ── Meta bar ── */
+        .dsgvo-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.75rem;
+            padding: 0.8rem 1.2rem;
+            background: var(--bg-section);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            font-size: 0.81rem;
+            color: var(--text-muted);
+        }
+
+        .dsgvo-meta i { color: var(--primary); }
+
+        .badge-updated {
+            background: var(--primary);
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 0.22rem 0.7rem;
+            border-radius: 20px;
+            font-family: 'Jost', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+        }
+
+        /* ── Expand controls ── */
+        .expand-controls {
+            display: flex;
+            gap: 0.6rem;
+            margin-bottom: 1.4rem;
+        }
+
+        .expand-controls button {
+            font-size: 0.78rem;
+            font-family: 'Jost', sans-serif;
+            font-weight: 600;
+            padding: 0.4rem 1rem;
+            border-radius: 6px;
+            border: 1.5px solid var(--border);
+            background: #fff;
+            color: var(--secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .expand-controls button:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        /* ── Section cards ── */
+        .dsgvo-section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(52,142,56,0.05);
+            transition: box-shadow 0.3s;
+        }
+
+        .dsgvo-section:hover {
+            box-shadow: 0 4px 20px rgba(52,142,56,0.11);
+        }
+
+        .dsgvo-section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            padding: 1rem 1.4rem;
+            background: linear-gradient(135deg, var(--dark) 0%, #1a5c35 100%);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .section-icon {
+            width: 34px;
+            height: 34px;
+            background: rgba(255,255,255,0.14);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .section-num {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.67rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.55);
+            display: block;
+            line-height: 1;
+            margin-bottom: 0.12rem;
+        }
+
+        .dsgvo-section-header h2 {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.97rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .section-chevron {
+            margin-left: auto;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .dsgvo-section.open .section-chevron {
+            transform: rotate(180deg);
+        }
+
+        /* ── Section body ── */
+        .dsgvo-section-body {
+            padding: 1.6rem 1.75rem;
+            background: #fff;
+            display: none;
+        }
+
+        .dsgvo-section.open .dsgvo-section-body {
+            display: block;
+        }
+
+        .dsgvo-section-body h3 {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-top: 1.4rem;
+            margin-bottom: 0.55rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 2px solid var(--light);
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .dsgvo-section-body h3:first-child { margin-top: 0; }
+
+        .dsgvo-section-body h3::before {
+            content: '';
+            display: inline-block;
+            width: 3px;
+            height: 14px;
+            background: var(--primary);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .dsgvo-section-body p {
+            font-size: 0.88rem;
+            line-height: 1.78;
+            color: #444;
+            margin-bottom: 0.8rem;
+        }
+
+        .dsgvo-section-body ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        .dsgvo-section-body ul li {
+            font-size: 0.88rem;
+            line-height: 1.7;
+            color: #444;
+            padding: 0.28rem 0 0.28rem 1.45rem;
+            position: relative;
+        }
+
+        .dsgvo-section-body ul li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            top: 0.35rem;
+            font-size: 0.72rem;
+        }
+
+        .dsgvo-section-body a {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .dsgvo-section-body a:hover { border-color: var(--primary); }
+
+        /* Contact / address block */
+        .contact-block {
+            background: var(--bg-section);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+            padding: 0.9rem 1.1rem;
+            margin: 0.6rem 0 1rem;
+            font-size: 0.88rem;
+            line-height: 1.8;
+        }
+
+        .contact-block strong {
+            color: var(--dark);
+            display: block;
+            margin-bottom: 0.15rem;
+        }
+
+        /* UPPERCASE legal block */
+        .legal-caps {
+            font-size: 0.76rem;
+            line-height: 1.72;
+            color: #555;
+            background: #fffdf0;
+            border: 1px solid #e8e0b0;
+            border-radius: 8px;
+            padding: 0.9rem 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.01em;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Authority highlight */
+        .authority-block {
+            background: var(--light);
+            border-radius: 8px;
+            padding: 0.9rem 1.1rem;
+            font-size: 0.87rem;
+            line-height: 1.75;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .authority-block strong { color: var(--dark); }
+
+        /* External link pill */
+        .ext-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.78rem;
+            background: var(--light);
+            color: var(--dark) !important;
+            border: 1px solid var(--border) !important;
+            padding: 0.22rem 0.65rem;
+            border-radius: 20px;
+            text-decoration: none !important;
+            transition: background 0.2s, color 0.2s;
+            margin-top: 0.25rem;
+        }
+
+        .ext-link:hover {
+            background: var(--primary) !important;
+            color: #fff !important;
+            border-color: var(--primary) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <div id="header-container"></div>
+
+    <!-- Page Header -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4">Datenschutzerklärung</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Datenschutz</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="dsgvo-layout">
+
+        <!-- TOC -->
+        <aside class="dsgvo-toc">
+            <div class="toc-title"><i class="fas fa-list-ul"></i> Inhaltsverzeichnis</div>
+            <ul>
+                <li><a href="#" onclick="openSection(0);return false;"><span class="toc-num">1.</span> Datenschutz auf einen Blick</a></li>
+                <li><a href="#" onclick="openSection(1);return false;"><span class="toc-num">2.</span> Hosting (Netlify)</a></li>
+                <li><a href="#" onclick="openSection(2);return false;"><span class="toc-num">3.</span> Allgemeine Hinweise &amp; Rechte</a></li>
+                <li><a href="#" onclick="openSection(3);return false;"><span class="toc-num">4.</span> Datenerfassung auf der Website</a></li>
+                <li><a href="#" onclick="openSection(4);return false;"><span class="toc-num">5.</span> Kontakt über WhatsApp</a></li>
+                <li><a href="#" onclick="openSection(5);return false;"><span class="toc-num">6.</span> Externe Dienste</a></li>
+                <li><a href="#" onclick="openSection(6);return false;"><span class="toc-num">7.</span> Cookies</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main>
+
+            <div class="dsgvo-meta">
+                <span><i class="fas fa-shield-alt"></i> DSGVO-konform</span>
+                <span><i class="fas fa-calendar-alt"></i> Stand: Juni 2025</span>
+                <span class="badge-updated">Aktuell</span>
+            </div>
+
+            <div class="expand-controls">
+                <button onclick="toggleAll(true)"><i class="fas fa-expand-alt"></i> Alle aufklappen</button>
+                <button onclick="toggleAll(false)"><i class="fas fa-compress-alt"></i> Alle zuklappen</button>
+            </div>
+
+            <!-- 1 -->
+            <div class="dsgvo-section open" id="sec-0">
+                <div class="dsgvo-section-header" onclick="toggleSection(0)">
+                    <div class="section-icon"><i class="fas fa-eye"></i></div>
+                    <div><span class="section-num">Abschnitt 1</span><h2>Datenschutz auf einen Blick</h2></div>
+                    <i class="fas fa-chevron-down section-chevron"></i>
+                </div>
+                <div class="dsgvo-section-body">
+                    <h3>Allgemeine Hinweise</h3>
+                    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+
+                    <h3>Wer ist verantwortlich?</h3>
+                    <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten finden Sie im Abschnitt „Verantwortliche Stelle".</p>
+
+                    <h3>Wie erfassen wir Ihre Daten?</h3>
+                    <p>Ihre Daten werden erhoben, indem Sie uns diese mitteilen – z. B. über das Kontaktformular. Weitere Daten werden automatisch beim Besuch der Website erfasst (Browser, Betriebssystem, Abrufzeit).</p>
+
+                    <h3>Wofür nutzen wir Ihre Daten?</h3>
+                    <p>Ein Teil der Daten dient der fehlerfreien Bereitstellung der Website. Der übrige Teil dient der Bearbeitung Ihrer Kontaktanfragen.</p>
+
+                    <h3>Welche Rechte haben Sie?</h3>
+                    <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Datenübertragbarkeit. Erteilte Einwilligungen können Sie jederzeit widerrufen. Bei Verstößen steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="dsgvo-section open" id="sec-1">
+                <div class="dsgvo-section-header" onclick="toggleSection(1)">
+                    <div class="section-icon"><i class="fas fa-server"></i></div>
+                    <div><span class="section-num">Abschnitt 2</span><h2>Hosting</h2></div>
+                    <i class="fas fa-chevron-down section-chevron"></i>
+                </div>
+                <div class="dsgvo-section-body">
+                    <p>Wir hosten die Inhalte unserer Website bei:</p>
+                    <div class="contact-block">
+                        <strong>Netlify, Inc.</strong>
+                        44 Montgomery Street, Suite 300<br>
+                        San Francisco, CA 94104, USA
+                    </div>
+                    <p>Netlify verarbeitet beim Abruf unserer Website technische Daten (IP-Adresse, Browser, Abrufzeitpunkt) in den USA. Die Übermittlung erfolgt auf Grundlage der <strong>EU-Standardvertragsklauseln (SCC)</strong> gemäß Art. 46 Abs. 2 lit. c DSGVO.</p>
+                    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an zuverlässiger Website-Bereitstellung).</p>
+                    <a class="ext-link" href="https://www.netlify.com/privacy/" target="_blank"><i class="fas fa-external-link-alt"></i> Datenschutzerklärung Netlify</a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="dsgvo-section open" id="sec-2">
+                <div class="dsgvo-section-header" onclick="toggleSection(2)">
+                    <div class="section-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div><span class="section-num">Abschnitt 3</span><h2>Allgemeine Hinweise und Pflichtinformationen</h2></div>
+                    <i class="fas fa-chevron-down section-chevron"></i>
+                </div>
+                <div class="dsgvo-section-body">
+                    <h3>Verantwortliche Stelle</h3>
+                    <div class="contact-block">
+                        <strong>Denyś Ropitskyi</strong>
+                        Schlüsselgarnweg 5<br>
+                        74081 Heilbronn<br>
+                        Telefon: <a href="tel:+4917632437624">+49 176 324 376 24</a><br>
+                        E-Mail: <a href="mailto:gartenhausmeisterservicedr@gmail.com">gartenhausmeisterservicedr@gmail.com</a>
+                    </div>
+
+                    <h3>Speicherdauer</h3>
+                    <p>Ihre Daten werden gespeichert, solange der Verarbeitungszweck besteht. Geschäftskorrespondenz und Kontaktanfragen werden gemäß gesetzlicher Aufbewahrungspflicht in der Regel <strong>6 bis 10 Jahre</strong> aufbewahrt (§ 147 AO, § 257 HGB).</p>
+
+                    <h3>Widerruf Ihrer Einwilligung</h3>
+                    <p>Erteilte Einwilligungen können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.</p>
+
+                    <h3>Widerspruchsrecht (Art. 21 DSGVO)</h3>
+                    <div class="legal-caps">WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE NACHWEISEN, DIE IHRE INTERESSEN ÜBERWIEGEN (ART. 21 ABS. 1 DSGVO).</div>
+
+                    <h3>Beschwerderecht bei der Aufsichtsbehörde</h3>
+                    <div class="authority-block">
+                        <strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong><br>
+                        Postfach 10 29 32, 70025 Stuttgart<br>
+                        Telefon: +49 711 615541-0<br>
+                        E-Mail: <a href="mailto:poststelle@lfdi.bwl.de">poststelle@lfdi.bwl.de</a><br>
+                        <a class="ext-link" href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" style="margin-top:0.5rem"><i class="fas fa-external-link-alt"></i> www.baden-wuerttemberg.datenschutz.de</a>
+                    </div>
+
+                    <h3>Recht auf Datenübertragbarkeit</h3>
+                    <p>Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder zur Vertragserfüllung automatisiert verarbeiten, in einem maschinenlesbaren Format zu erhalten oder übertragen zu lassen.</p>
+
+                    <h3>Auskunft, Löschung und Berichtigung</h3>
+                    <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft sowie auf Berichtigung oder Löschung Ihrer gespeicherten personenbezogenen Daten. Wenden Sie sich hierzu jederzeit an uns.</p>
+
+                    <h3>Recht auf Einschränkung der Verarbeitung</h3>
+                    <ul>
+                        <li>Wenn Sie die Richtigkeit Ihrer Daten bestreiten (für die Dauer der Prüfung)</li>
+                        <li>Wenn die Verarbeitung unrechtmäßig erfolgte und Sie Einschränkung statt Löschung verlangen</li>
+                        <li>Wenn wir die Daten nicht mehr benötigen, Sie diese jedoch für Rechtsansprüche brauchen</li>
+                        <li>Wenn Sie Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="dsgvo-section open" id="sec-3">
+                <div class="dsgvo-section-header" onclick="toggleSection(3)">
+                    <div class="section-icon"><i class="fas fa-database"></i></div>
+                    <div><span class="section-num">Abschnitt 4</span><h2>Datenerfassung auf dieser Website</h2></div>
+                    <i class="fas fa-chevron-down section-chevron"></i>
+                </div>
+                <div class="dsgvo-section-body">
+                    <h3>Kontaktformular</h3>
+                    <p>Wenn Sie uns über das Kontaktformular eine Anfrage zukommen lassen, werden Ihre Angaben (Name, E-Mail-Adresse, Telefonnummer, PLZ/Ort, Dienstleistung, Nachricht) gespeichert, um Ihre Anfrage zu bearbeiten.</p>
+                    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO. Aufbewahrung bis zu <strong>6–10 Jahre</strong> gemäß § 147 AO / § 257 HGB.</p>
+
+                    <h3>Anfrage per E-Mail oder Telefon</h3>
+                    <p>Anfragen per E-Mail oder Telefon werden inklusive aller personenbezogenen Daten gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Rechtsgrundlage: Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO.</p>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="dsgvo-section open" id="sec-4">
+                <div class="dsgvo-section-header" onclick="toggleSection(4)">
+                    <div class="section-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div><span class="section-num">Abschnitt 5</span><h2>Kontakt über WhatsApp</h2></div>
+                    <i class="fas fa-chevron-down section-chevron"></i>
+                </div>
+                <div class="dsgvo-section-body">
+                    <p>Auf unserer Website bieten wir die Möglichkeit, uns über WhatsApp zu kontaktieren. WhatsApp ist ein Dienst der <strong>WhatsApp Ireland Limited</strong>, einem Tochterunternehmen der <strong>Meta Platforms, Inc.</strong>, 1601 Willow Road, Menlo Park, CA 94025, USA.</p>
+                    <p>Wenn Sie auf den WhatsApp-Link klicken, werden Ihre Daten (Telefonnummer, Nachrichteninhalt) von WhatsApp/Meta verarbeitet – einschließlich einer Übermittlung in die USA auf Grundlage von EU-Standardvertragsklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO.</p>
+                    <p><strong>Hinweis:</strong> Durch Klick verlassen Sie unsere Website. Für die Datenverarbeitung durch WhatsApp/Meta sind wir nicht verantwortlich.</p>
+                    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktiven Klick) sowie Art. 6 Abs. 1 lit. f DSGVO.</p>
+                    <a class="ext-link" href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank"><i class="fas fa-external-link-alt"></i> Datenschutzrichtlinie WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="dsgvo-section open" id="sec-5">
+                <div class="dsgvo-section-header" onclick="toggleSection(5)">
+                    <div class="section-icon"><i class="fas fa-globe"></i></div>
+                    <div><span class="section-num">Abschnitt 6</span><h2>Externe Dienste und Inhalte</h2></div>
+                    <i class="fas fa-chevron-down section-chevron"></i>
+                </div>
+                <div class="dsgvo-section-body">
+                    <h3>Google Maps</h3>
+                    <p>Falls auf dieser Website Google Maps eingebunden ist, wird dieser Dienst von <strong>Google Ireland Limited</strong>, Gordon House, Barrow Street, Dublin 4, Irland, betrieben. Beim Laden übermittelt Ihr Browser Daten (inkl. IP-Adresse) an Google-Server. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
+                    <a class="ext-link" href="https://policies.google.com/privacy" target="_blank"><i class="fas fa-external-link-alt"></i> Google Datenschutzerklärung</a>
+
+                    <h3>Google Fonts</h3>
+                    <p>Diese Website lädt Schriftarten über Google-Server (fonts.googleapis.com). Dabei wird Ihre IP-Adresse an Google übermittelt. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Zur Vermeidung dieser Übermittlung empfiehlt sich die lokale Einbindung der Schriftarten.</p>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="dsgvo-section open" id="sec-6">
+                <div class="dsgvo-section-header" onclick="toggleSection(6)">
+                    <div class="section-icon"><i class="fas fa-cookie-bite"></i></div>
+                    <div><span class="section-num">Abschnitt 7</span><h2>Cookies</h2></div>
+                    <i class="fas fa-chevron-down section-chevron"></i>
+                </div>
+                <div class="dsgvo-section-body">
+                    <p>Diese Website verwendet technisch notwendige Cookies, die für den Betrieb der Website erforderlich sind. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
+                    <p>Sie können Ihren Browser so konfigurieren, dass Cookies blockiert oder gelöscht werden. Bei Deaktivierung kann die Funktionalität der Website eingeschränkt sein.</p>
+                    <p>Sofern nicht notwendige Cookies oder Tracking-Technologien eingesetzt werden, erfolgt dies ausschließlich nach Ihrer ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s" style = "padding-bottom: 0rem !important;">
+        <div class="container py-5">
+            <div class="row g-6">
+                <div class="col-lg-4 col-md-7">
+                    <h4 class="text-white mb-4">Kontakt</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Schlüsselgarnweg 5, Heilbronn 74081, Germany</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+49 176 324 376 24</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>gartenhausmeisterservicedr@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.tiktok.com/@denys.ropitskyi"><i class="fab fa-tiktok"></i>    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Nützliche Links</h4>
+                    <a class="btn btn-link" href="about.html">Über Uns</a>
+                    <a class="btn btn-link" href="contact.html">Kontakt</a>
+                    <a class="btn btn-link" href="gartenpflege.html">Gartenpflege</a>
+                    <a class="btn btn-link" href="hausmeisterservice.html">Hausmeisterservice</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Servicezeiten</h4>
+                    <p>Montag - Freitag: 08:00 - 18:00</p>
+                    <p>Samstag: 09:00 - 18:00</p>
+                    <p>Sonntag: Nach Vereinbarung</p>
+                    <p class="mt-3">Notdienst verfügbar</p>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4" style="padding-left:0 !important; padding-right:0 !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">GartenWunsch - Denys</a>, All Right Reserved.
+                        &nbsp;|&nbsp;
+                        <a class="border-bottom" href="impressum.html">Impressum</a>
+                        &nbsp;|&nbsp;
+                        <a class="border-bottom" href="datenschutz.html">Datenschutz</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+    </div>
+    <!-- Footer End -->
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        window.addEventListener('load', loadCommonSections);
+
+        function toggleSection(i) {
+            document.getElementById('sec-' + i).classList.toggle('open');
+        }
+
+        function openSection(i) {
+            const sec = document.getElementById('sec-' + i);
+            sec.classList.add('open');
+            sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function toggleAll(open) {
+            document.querySelectorAll('.dsgvo-section').forEach(s =>
+                open ? s.classList.add('open') : s.classList.remove('open')
+            );
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* ===================================
+   DSGVO-COMPLIANT SELF-HOSTED FONTS
+   ================================= */
+
+/* Jost Font - Weight 500 (Medium) */
+@font-face {
+  font-display: swap;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/jost/jost-v20-latin-500.woff2') format('woff2');
+}
+
+/* Jost Font - Weight 600 (Semi-Bold) */
+@font-face {
+  font-display: swap;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/jost/jost-v20-latin-600.woff2') format('woff2');
+}
+
+/* Jost Font - Weight 700 (Bold) */
+@font-face {
+  font-display: swap;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/jost/jost-v20-latin-700.woff2') format('woff2');
+}
+
+/* Open Sans Font - Weight 400 (Regular) */
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans/open-sans-v44-latin-regular.woff2') format('woff2');
+}
+
+/* Open Sans Font - Weight 500 (Medium) */
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/open-sans/open-sans-v44-latin-500.woff2') format('woff2');
+}
+
+/* ===================================
+   FONT USAGE IN YOUR WEBSITE
+   ================================= */
+
+/* These fonts are now available throughout your site:
+   
+   - Jost: Used for headings (h1, h2, h3, etc.)
+   - Open Sans: Used for body text
+   
+   No external requests are made.
+   All fonts are loaded from your own server.
+   100% DSGVO compliant! 🇩🇪✅
+*/

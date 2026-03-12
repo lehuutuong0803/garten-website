@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GartenWunsch | Ihr Ratgeber für den Traumgarten</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Local Fonts - DSGVO Compliant -->
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <!-- Icon Fonts - Self-hosted (after downloading) -->
+    <link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Header - Start -->
+    <div id="header-container"></div>
+
+    <!-- Header - End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" >
+                    <img class="w-100"  src="img/background-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Machen Sie Ihr Zuhause zu einem Garten</h1>
+                                    <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-4">Mehr entdecken</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" >
+                    <img class="w-100" src="img/background-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Gestalten Sie Ihren eigenen kleinen Garten zu Hause</h1>
+                                    <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-4">Mehr entdecken</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Zurück</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Weiter</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Top Feature Start -->
+    <div class="container-fluid top-feature py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-times text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Keine versteckten Kosten</h4>
+                                <span>Transparente Preisgestaltung für alle unsere Dienstleistungen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-users text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Engagiertes Team</h4>
+                                <span>Professionelle Gärtner mit langjähriger Erfahrung</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>24/7 Erreichbar</h4>
+                                <span>Jederzeit für Ihre Gartenanliegen verfügbar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Feature End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/IMG_9894.jpg">
+                </div>
+                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-1 text-primary mb-0">12</h1>
+                    <p class="text-primary mb-4">Jahre Erfahrung</p>
+                    <h1 class="display-5 mb-4">Wir verwandeln Ihr Zuhause in einen Garten</h1>
+                    <p class="mb-4">Mit 10 Jahren Erfahrung im Gartenbau schaffen wir traumhafte Außenbereiche, die Ihre individuellen Wünsche widerspiegeln. Unser engagiertes Team verbindet Fachwissen mit Leidenschaft für grüne Oasen.</p>
+                    <a class="btn btn-primary py-3 px-4" href="about.html">Mehr entdecken</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Engagiertes Team</h4>
+                                <span>Experten mit Leidenschaft für perfekte Gartengestaltung</span>
+                            </div>
+                        </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">354</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Zufriedene Kunden</span>
+                </div>
+                <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">358</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Fertiggestellte Gärten</span>
+                </div>
+                <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">6</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Engagierte Mitarbeiter</span>
+                </div>
+                <!-- <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Warum wir</p>
+                    <h1 class="display-5 mb-4">Einige Gründe, warum Menschen uns wählen!</h1>
+                    <p class="mb-4">Wir vereinen jahrzehntelange Erfahrung mit modernster Technik und individueller Beratung. Unser Team steht für Qualität, Zuverlässigkeit und kundenorientierte Lösungen, die Ihren Garten zum Traumgarten machen.</p>
+                    <a class="btn btn-primary py-3 px-4" href="about.html">Mehr erfahren</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                            <i class="fa fa-check fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-0">Zufriedenheit</h4>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                            <i class="fa fa-users fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-0">Engagiertes Team</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-tools fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-0">Moderne Ausrüstung</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Unsere Dienstleistungen</p>
+                <h1 class="display-5 mb-5">Leistungen, die wir für Sie anbieten</h1>
+            </div>
+    <!-- Gartenpflege Services Start -->
+
+            <!-- Gartenpflege allgemein -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/garden-maintenance.jpg" alt="Gartenpflege">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Gartenpflege</h2>
+                    <p class="mb-4">Ihr Garten verdient die beste Pflege! Wir übernehmen die komplette Pflege Ihres Gartens und sorgen dafür, dass er das ganze Jahr über gepflegt und ansprechend aussieht.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Rasenmähen, Vertikutieren und Düngen</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Jäten, Mulchen und Bepflanzung</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Optimale Wasserversorgung Ihrer Pflanzen</li>
+                    </ul>
+                    <!-- <div class="row g-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center">
+                                <div class="btn-square bg-light rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h5>Regelmäßige Rasenpflege</h5>
+                                    <span>Rasenmähen, Vertikutieren und Düngen</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-center">
+                                <div class="btn-square bg-light rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h5>Beetpflege</h5>
+                                    <span>Jäten, Mulchen und Bepflanzung</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-center">
+                                <div class="btn-square bg-light rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h5>Bewässerung</h5>
+                                    <span>Optimale Wasserversorgung Ihrer Pflanzen</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Unkrautentfernung -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/weed-removal.jpg" alt="Unkrautentfernung">
+                </div>
+                <div class="col-lg-6 order-lg-1 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Unkrautentfernung</h2>
+                    <p class="mb-4">Unkraut kann Ihren Garten schnell ungepflegt aussehen lassen und andere Pflanzen verdrängen. Wir entfernen Unkraut gründlich und nachhaltig.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Mechanische Unkrautentfernung ohne Chemie</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Entfernung von Wurzelunkräutern</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Pflasterfugen reinigen</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Vorbeugung durch Mulchen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mäharbeiten -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/moving.jpg" alt="Mäharbeiten">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Mäharbeiten</h2>
+                    <p class="mb-4">Ein gut gemähter Rasen ist die Grundlage für einen schönen Garten. Wir kümmern uns um das regelmäßige Mähen mit professionellem Gerät.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Regelmäßiges Rasenmähen</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Kantenschnitt entlang von Wegen und Beeten</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Mulchmähen für natürliche Düngung</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Professionelle Mähgeräte für perfekte Ergebnisse</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Heckenpflege und Schnitt -->
+            <div id="heckenschnitt" class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/hedge-care.jpg" alt="Heckenschnitt">
+                </div>
+                <div class="col-lg-6 order-lg-1 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Heckenpflege und Schnitt</h2>
+                    <p class="mb-4">Hecken benötigen regelmäßige Pflege, um dicht und gesund zu bleiben. Wir schneiden Ihre Hecken fachgerecht und formen sie nach Ihren Wünschen.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Form- und Pflegeschnitt</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Alle Heckenarten (Thuja, Liguster, Kirschlorbeer etc.)</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Schnitt zu optimalen Zeitpunkten</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Entsorgung des Schnittguts inklusive</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Baumfällung -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/tree-felling.jpg" alt="Baumfällung">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Baumfällung</h2>
+                    <p class="mb-4">Wenn ein Baum gefällt werden muss, übernehmen wir dies sicher und professionell. Wir berücksichtigen alle Sicherheitsaspekte und behördlichen Vorgaben.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Sichere Baumfällung durch Experten</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Sturmschäden beseitigen</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Wurzelstockfräsung</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Entsorgung des Holzes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Laub kehren und entsorgen -->
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/sweep-leaves.jpg" alt="Laub kehren">
+                </div>
+                <div class="col-lg-6 order-lg-1 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Laub kehren und entsorgen</h2>
+                    <p class="mb-4">Im Herbst fällt viel Laub an. Wir sorgen dafür, dass Ihr Garten und Ihre Wege frei von Laub bleiben und entsorgen es fachgerecht.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Regelmäßiges Laubkehren im Herbst</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Reinigung von Dachrinnen</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Entsorgung oder Kompostierung</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Schutz des Rasens vor Fäulnis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Rollrasen verlegen -->
+            <div id="rollrasen" class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/laying-rolled-turf.jpg" alt="Rollrasen">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Rollrasen verlegen</h2>
+                    <p class="mb-4">Sie möchten schnell einen schönen grünen Rasen? Rollrasen ist die perfekte Lösung! Wir bereiten den Untergrund vor und verlegen hochwertigen Rollrasen professionell.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Bodenvorbereitung und Planierung</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Verlegung von Premium-Rollrasen</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Sofort nutzbarer, dichter Rasen</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Anwachsgarantie und Pflegetipps</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Grünschnittentsorgung -->
+            <div id="gruenschnitt" class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/green-waste-disposal.jpg" alt="Grünschnittentsorgung">
+                </div>
+                <div class="col-lg-6 order-lg-1 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Grünschnittentsorgung</h2>
+                    <p class="mb-4">Nach jedem Schnitt und jeder Gartenarbeit bleibt Grünschnitt übrig. Wir kümmern uns um die fachgerechte Entsorgung und nehmen Ihnen diese Arbeit ab.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Abtransport von Grünschnitt</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Entsorgung von Laub und Ästen</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Umweltgerechte Verwertung</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Container-Service bei Bedarf</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Winterdienst -->
+            <div id="winterdienst" class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="img/winter-service.jpg" alt="Winterdienst">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="mb-4">Winterdienst</h2>
+                    <p class="mb-4">Im Winter sorgen wir dafür, dass Ihre Wege und Zufahrten sicher begehbar und befahrbar bleiben. Schneeräumung und Streudienst nach Bedarf.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Schneeräumung von Gehwegen und Einfahrten</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Streudienst bei Glatteis</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>24-Stunden-Bereitschaft bei Bedarf</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-3"></i>Erfüllung der Räum- und Streupflicht</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Gartenpflege Services End -->
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Projects Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Unsere Projekte</p>
+                <h1 class="display-5 mb-5">Einige unserer wunderbaren Projekte</h1>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">Alle</li>
+                        <li class="mx-2" data-filter=".first">Abgeschlossene Projekte</li>
+                        <li class="mx-2" data-filter=".second">Laufende Projekte</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <div class="ratio ratio-1x1" style="background-image: url('img/IMG_1579.jpg');">
+                            <img src="img/service1_1.jpg" class="img-fluid rounded" alt="">
+                        
+                            <div class="portfolio-text">
+                                <h4 class="text-white mb-4">Gartengestaltung</h4>
+                                <div class="d-flex">
+                                    <a class="btn btn-lg-square rounded-circle mx-2" href="img/service1_1.jpg" data-lightbox="gartengestaltung"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <div class="ratio ratio-1x1">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <div class="portfolio-text">
+                                <h4 class="text-white mb-4">Pflanzenbeschnitt</h4>
+                                <div class="d-flex">
+                                    <a class="btn btn-lg-square rounded-circle mx-2" href="img/service2_1.jpg" data-lightbox="pflanzenbeschnitt"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Bewässerung & Entwässerung</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="bewässerung_entwässerung"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Gartenpflege</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="gartenpflege"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Grüne Technologie</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="grünetechnologie"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Urbane Gärten</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="urbanegärten"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Projects End -->
+    <!-- Hidden images - add AFTER the portfolio-container div closes -->
+     <div style="display: none;">
+        <a href="img/service1_2.jpg" data-lightbox="gartengestaltung" data-title=""></a>
+    
+        <a href="img/service2_2.jpg" data-lightbox="pflanzenbeschnitt" data-title=""></a>
+
+        <a href="img/service4_1.jpg" data-lightbox="gartenpflege" data-title=""></a>
+    </div>
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Our Team</p>
+                <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Doris Jordan</h4>
+                            <p class="text-primary">Landscape Designer</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Johnny Ramirez</h4>
+                            <p class="text-primary">Garden Designer</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Diana Wagner</h4>
+                            <p class="text-primary">Senior Gardener</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Testimonial</p>
+                    <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                    <a class="btn btn-primary py-3 px-4" href="">See More</a>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <h4>Client Name</h4>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <h4>Client Name</h4>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+        <!-- Service Area Start -->
+    <div class="container-fluid bg-primary py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn text-white" data-wow-delay="0.1s">
+                    <h2 class="text-white mb-4">Unser Einsatzgebiet</h2>
+                    <p class="text-white mb-4">Wir sind in Heilbronn und im gesamten Umkreis von ca. 30 km für Sie im Einsatz. Ob Stadt oder Land – wir kommen zu Ihnen!</p>
+                    <h5 class="text-white mb-3">Unsere Servicegebiete umfassen unter anderem:</h5>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle me-2"></i>
+                                <span>Heilbronn Stadt</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle me-2"></i>
+                                <span>Neckarsulm</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle me-2"></i>
+                                <span>Weinsberg</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle me-2"></i>
+                                <span>Bad Wimpfen</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle me-2"></i>
+                                <span>Lauffen am Neckar</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle me-2"></i>
+                                <span>Talheim</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle me-2"></i>
+                                <span>Flein</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-check-circle me-2"></i>
+                                <span>Und weitere...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white rounded p-4">
+                        <h4 class="mb-3">Kostenloses Angebot anfordern</h4>
+                        <p class="mb-4">Nicht sicher, ob wir in Ihrer Gegend tätig sind? Kontaktieren Sie uns einfach – wir finden eine Lösung!</p>
+                        <a href="contact.html" class="btn btn-primary py-3 px-5">Jetzt Kontakt aufnehmen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Area End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s" style = "padding-bottom: 0rem !important;">
+        <div class="container py-5">
+            <div class="row g-6">
+                <div class="col-lg-4 col-md-7">
+                    <h4 class="text-white mb-4">Kontakt</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Schlüsselgarnweg 5, Heilbronn 74081, Germany</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+49 176 324 376 24</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>gartenhausmeisterservicedr@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.tiktok.com/@denys.ropitskyi"><i class="fab fa-tiktok"></i>    </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Nützliche Links</h4>
+                    <a class="btn btn-link" href="about.html">Über Uns</a>
+                    <a class="btn btn-link" href="contact.html">Kontakt</a>
+                    <a class="btn btn-link" href="gartenpflege.html">Gartenpflege</a>
+                    <a class="btn btn-link" href="hausmeisterservice.html">Hausmeisterservice</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Servicezeiten</h4>
+                    <p>Montag - Freitag: 08:00 - 18:00</p>
+                    <p>Samstag: 09:00 - 18:00</p>
+                    <p>Sonntag: Nach Vereinbarung</p>
+                    <p class="mt-3">Notdienst verfügbar</p>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4" style="padding-left:0 !important; padding-right:0 !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">GartenWunsch - Denys</a>, All Right Reserved.
+                        &nbsp;|&nbsp;
+                        <a class="border-bottom" href="impressum.html">Impressum</a>
+                        &nbsp;|&nbsp;
+                        <a class="border-bottom" href="datenschutz.html">Datenschutz</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+    </div>
+    <!-- Footer End -->
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // We run the function when the page loads to ensure the container exists
+        window.addEventListener('load', loadCommonSections);
+    </script>
+</body>
+
+</html>
