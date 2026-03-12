@@ -26,6 +26,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Cookie Consent - Klaro (self-hosted) -->
+    <link href="css/klaro.min.css" rel="stylesheet">
 
     <style>
         .datenschutz-section {
@@ -220,10 +222,17 @@
 
                     <!-- Abschnitt 7 -->
                     <div class="datenschutz-section" id="abschnitt7">
-                        <h3 class="mb-3">7. Cookies</h3>
-                        <p>Diese Website verwendet technisch notwendige Cookies, die für den Betrieb der Website erforderlich sind. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
-                        <p>Sie können Ihren Browser so konfigurieren, dass Cookies blockiert oder gelöscht werden. Bei Deaktivierung kann die Funktionalität der Website eingeschränkt sein.</p>
-                        <p>Sofern nicht notwendige Cookies oder Tracking-Technologien eingesetzt werden, erfolgt dies ausschließlich nach Ihrer ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.</p>
+                            <h3 class="mb-3">7. Cookies und Einwilligungsverwaltung</h3>
+    
+                            <h5>Technisch notwendige Cookies</h5>
+                            <p>Diese Website verwendet technisch notwendige Cookies, die für den grundlegenden Betrieb der Website erforderlich sind (z. B. Seitenlade-Animation, Formularzustand). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO i. V. m. § 25 Abs. 2 TTDSG.</p>
+    
+                            <h5>Einwilligungsverwaltung (Klaro)</h5>
+                            <p>Wir verwenden das Open-Source-Tool <strong>Klaro</strong> zur Verwaltung Ihrer Cookie-Einwilligungen. Klaro speichert Ihre Einwilligungsentscheidung ausschließlich lokal in Ihrem Browser (<code>localStorage</code>) unter dem Schlüssel <code>klaro-consent</code>. Es werden dabei keine Daten an externe Server übertragen. Die gespeicherte Präferenz bleibt bis zur manuellen Löschung erhalten oder bis Sie Ihre Einwilligung über den Link „Cookie-Einstellungen" im Footer widerrufen.</p>
+                            <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. c DSGVO (rechtliche Verpflichtung zur Nachweisbarkeit von Einwilligungen gemäß Art. 7 Abs. 1 DSGVO).</p>
+    
+                            <h5>Einwilligung widerrufen oder ändern</h5>
+                            <p>Sie können Ihre Cookie-Einstellungen jederzeit ändern oder widerrufen, indem Sie auf den Link <strong>„Cookie-Einstellungen"</strong> im Footer dieser Website klicken. Alternativ können Sie Ihren Browser so konfigurieren, dass Cookies und <code>localStorage</code>-Einträge blockiert oder gelöscht werden. Bei Deaktivierung kann die Funktionalität der Website eingeschränkt sein.</p>
                     </div>
 
                 </div>
@@ -266,11 +275,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">GartenWunsch - Denys</a>, All Right Reserved.
-                        &nbsp;|&nbsp;
-                        <a class="border-bottom" href="impressum.html">Impressum</a>
-                        &nbsp;|&nbsp;
-                        <a class="border-bottom" href="datenschutz.html">Datenschutz</a>
+                        <div>&copy; <a class="border-bottom" href="#">GartenWunsch - Denys</a>, All Right Reserved.</div>
+                        <div style="white-space: nowrap;">
+                            <a class="border-bottom" href="impressum.html">Impressum</a>
+                            &nbsp;|&nbsp;
+                            <a class="border-bottom" href="datenschutz.html">Datenschutz</a>
+                            &nbsp;|&nbsp;
+                            <a class="border-bottom" href="#" onclick="klaro.show(); return false;">Cookie-Einstellungen</a>
+                        </div>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
@@ -284,7 +296,10 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    
+    <!-- Cookie Consent - Klaro (self-hosted, config must come first) -->
+    <script src="js/klaro-config.js"></script>
+    <script defer src="js/klaro.js"></script>
     <!-- JavaScript Libraries -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
